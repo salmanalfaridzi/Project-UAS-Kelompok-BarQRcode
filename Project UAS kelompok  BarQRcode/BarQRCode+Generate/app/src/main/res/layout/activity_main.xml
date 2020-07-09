@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkGrey1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:src="@drawable/logofront"
+        android:id="@+id/titleText1"/>
+
+    <Button
+        android:id="@+id/bIntentGenQR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleText1"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorLightGrey2"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/button_style"
+        android:layout_centerHorizontal="true"
+        android:onClick="ListenerIntentGenerateQR"
+        android:text="Generate QR From Text" />
+
+    <Button
+        android:id="@+id/bScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bIntentGenQR"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerInParent="true"
+        android:textColor="@color/colorLightGrey2"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:background="@drawable/button_style"
+        android:layout_centerHorizontal="true"
+        android:onClick="ListenerScanQR"
+        android:text="Scan Bar-QRCode" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your scanned result will appear here"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/bScan"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/tvResult"
+        />
+
+<!--    <Button-->
+<!--        android:id="@+id/bGenerate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/bScan"-->
+<!--        android:fontFamily="sans-serif-condensed"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:textColor="@color/colorLightGrey2"-->
+<!--        android:textSize="35sp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:background="@drawable/button_style"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Generate QR" />-->
+
+</RelativeLayout>
